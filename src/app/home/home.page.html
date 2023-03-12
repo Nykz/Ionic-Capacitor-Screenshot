@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Take Screenshot / Picture
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div align="center">
+    <img *ngIf="image" [src]="image"/>
+    <ion-icon *ngIf="!image" name="images-outline"></ion-icon>
+  </div>
+
+  <ion-row>
+    <ion-col size="6">
+      <ion-button expand="block" (click)="takePicture()">
+        Take A Picture
+      </ion-button>
+    </ion-col>
+    <ion-col size="6">
+      <ion-button expand="block" (click)="takeScreenshot()">
+        Take A Screenshot
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  
+</ion-content>

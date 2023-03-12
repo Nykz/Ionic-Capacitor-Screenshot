@@ -1,0 +1,7 @@
+{
+  "name": "file-transfer-firebase",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
